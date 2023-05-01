@@ -57,7 +57,7 @@ function tweendistance(pos,vel,dist)
  end
 
 function entregar()
-    for _,v in pairs(wsConstrucoes.Pizzaria.OrderCharSpawns:GetChildren()) do
+    for _,v in pairs(ws.Construcoes.Pizzaria.OrderCharSpawns:GetChildren()) do
         if v:FindFirstChild('OrderChar') then
             repeat wait()
                 local tween = tweendistance(v.OrderChar.Position,_G.speed1,-8)
